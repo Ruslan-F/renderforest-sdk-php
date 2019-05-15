@@ -334,6 +334,7 @@ class ProjectData
             'title' => isset($screen['title']) ? $screen['title'] : NULL,
             'type' => isset($screen['type']) ? $screen['type'] : NULL,
             'areas' => isset($screen['areas']) ? $screen['areas'] : NULL,
+            'selectedDuration' => isset($screen['selectedDuration']) ? $screen['selectedDuration'] : NULL,
             'getAreas' => function () use ($screen) {
                 return array_map(function ($area) {
                     return $this->constructArea($area);
